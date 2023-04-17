@@ -5,13 +5,14 @@
 /*Barra de navegacion*/
 
 .navbar{
-    padding: 1rem;
-    background-color: #dac7a8c7;
+    padding: .5rem;
+    background-color: #A75D5D;
+
 }
 
 .navbar-collapse{
-    align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
+    font-size: 1.3rem;
 }
 
 .navbar-toggler{
@@ -19,12 +20,19 @@
 }
 
 .logo-portafolio{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
+}
+
+.nav-link{
+    color: #20262E;
+    margin-right: 1.8rem;
+    transition: transform 0.3s ease;
 }
 
 .nav-link:hover{
-    color: #2071e4;
+    color: #ECECEC;
+    transform: scale(1.2);
 }
 
 /* Estilos Generales */
@@ -39,17 +47,17 @@ section{
 h1{
     font-size: 2.5rem;
     font-family: 'Source Sans Pro', sans-serif;
-    color: #0B2447;
+    color: #ECECEC;
 }
 
 .seccion-oscura{
-    background-color: #1b1b32;
+    background-color: #F0997D;
     color: white;
 }
 
 .seccion-clara{
     color: black;
-    background-color: white;
+    background-color: #675D50;
 }
 
 .seccion-titulo{
@@ -65,24 +73,42 @@ h1{
 /* Seccion Hero */
 
 .hero{
-    background-color: #E4DCCF;
+    background-color: #D3756B;
     min-height: 450px;
     text-align: center;
 }
 
 .hero-principal{
+    height: 100vh;
     padding: 3rem;
 }
 
+.card{
+    padding: 40px;
+    border-radius: 30px;
+    background-color:#a75d5d91;
+    box-shadow: 0px 0px 5px 2px #000;
+}
+
+
 .hero-imagen-perfil{
-    width: 300px;
-    height: 350px;
+    width: 380px;
+    height: 450px;
     border-radius: 10px;
-    margin: 20px;
+    margin-bottom: 10px;
+    transition: transform 0.6s ease;
+}
+
+.hero-imagen-perfil:hover{
+    transform: scale(1.1);
+}
+
+.hero-inferior-imagen{
+    margin-top: 3rem;
 }
 
 .hero-principal h2{
-    color: #233941;
+    color: #ECECEC;
     font-weight: bold;
     font-size: 1.5rem;
 }
@@ -90,25 +116,39 @@ h1{
 /*Seccion sobre mi */
 
 .sobre-mi{
-    height: 500px;
-    padding: 10px;
+    height: 50vh;
 }
 
 .sobre-mi .contenedor{
-    max-width: 600px;
+    max-width: 90vw;
     text-align: center;
+}
+
+.seccion-titulo{
+    color: #313131;
+    font-size: 3rem;
+    padding-bottom: 2.8rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.seccion-texto{
+    color: #0B2447;
+    font-size: 1.2rem;
 }
 
 /* Experiencia */
 .experiencia{
     padding: 40px 40px 60px 40px;
+    background-color: #FFC3A1;
 }
 
 .experiencia .columna{
     padding: 20px;
-    border: 2px solid #8080804d;
-    justify-content: space-evenly; 
+    border: 1px solid #000000;
+    justify-content: space-between; 
+    border-radius: 15px;
     transition: all 0.2 ease-in;
+    background-color: #A75D5D;
 }
 
 .experiencia .columna:hover{
