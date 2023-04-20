@@ -1,23 +1,17 @@
 /*font-family: 'Rubik Dirt', cursive; */
 /*font-family: 'Source Sans Pro', sans-serif;*/
 
+body{
+    overflow-x: hidden;
+}
+
 
 /*Barra de navegacion*/
 
 .navbar{
-    position: relative;
     padding: 1.2rem 0;
     background-color: #b3735e;
 
-}
-
-.navbar-collapse{
-    justify-content: center;
-    font-size: 1.3rem;
-}
-
-.navbar-toggler{
-    color: #0B2447;
 }
 
 .logo-portafolio{
@@ -121,13 +115,8 @@ h1{
 /*Seccion sobre mi */
 
 .sobre-mi{
-    height: 60vh;
+    max-height: 100vh;
     align-items: center;
-}
-
-.sobre-mi .contenedor{
-    max-width: 80vw;
-    text-align: center;
 }
 
 .seccion-titulo{
@@ -175,7 +164,7 @@ h1{
 .proyectos h2{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 3rem;
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 .card-proyecto{
@@ -270,25 +259,48 @@ h1{
     .navbar-brand{
         display: none;
     }
-}
+    .navbar-nav{
+        display: flex;
+        align-items: center;
+    }
+    .hero{
+        width: 100vw;
+        min-height: 45rem ;
+    }
 
-@media screen and (min-width: 700px){
-    .hero-inferior-imagen{
-        max-width: 600px;
+    .card{
+        max-width: 20rem;
+    }
+    .card img{
+        max-width: 17rem;
+        max-height: 20rem;
+    }
+    #about-me h2{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    #about-me p{
+        font-size: 1rem;
     }
 }
 
-@media screen and (max-width:767px){
-    .collapse{
-        background-color: #0B2447;
-        border-bottom-left-radius: 50px;
-        border-bottom-right-radius: 50px;
+@media screen and (max-width:425px) {
+    
+    #about-me h2{
+        font-size: 1.5rem;
     }
-}
+    #about-me p{
+        font-size: .8rem;
+    }
+    
+    .logos img{
+       width: 80px;
+       height: 80px;
+    }
+    .proyectos-container{
+        width: 200px;
+    }
+    
 
-@media screen and (max-width:767px){
-    .nav-item a{
-        color: white;
-    }
 }
 

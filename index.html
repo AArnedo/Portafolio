@@ -30,12 +30,12 @@
     <!--Barra de navegacion-->
     <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse d-flex" id="navbar-toggler">
+          <div class="collapse navbar-collapse" id="menu">
             <a class="navbar-brand" href="#"><img class="logo-portafolio" src="imagenes/icono.png" width="50" alt="logo de la pagina web"></a>
-            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <ul class="navbar-nav m-auto">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#sobre-mi">Sobre mi</a>
               </li>
@@ -49,6 +49,7 @@
           </div>
         </div>
     </nav>
+  
     
     <!-- Seccion Hero -->
     <section class="hero align-items-center">
@@ -65,9 +66,9 @@
 
     <!-- Sobre Mi -->
     <section class="sobre-mi seccion-oscura" id="sobre-mi">
-      <div class="contenedor">
+      <div class="container-fluid d-flex flex-column align-items-center" id="about-me">
         <h2 class="seccion-titulo">Conoce a Agustin:</h2>
-        <p class="seccion-texto"> Soy <b>Agustín Arnedo</b>, tengo 27 años, soy de La Rioja, Argentina y actualmente soy alumno avanzado de Ingeniería Civil en UTN Facultad Regional La Rioja.<br>
+        <p class="seccion-texto w-75 mb-5"> Soy <b>Agustín Arnedo</b>, tengo 27 años, soy de La Rioja, Argentina y actualmente soy alumno avanzado de Ingeniería Civil en UTN Facultad Regional La Rioja.<br>
         Hace mas de 1 año comencé a interesarme en el mundo IT y cada día me estoy perfeccionando a través de Cursos Online.<br>
         Desde muy chico que estoy familiarizado con las computadoras y la Programación se convirtió en uno de mis objetivos de vida, actualmente me interesa mucho la parte Front-End basada en el Desarrollo Web pero mi deseo es convertirme en Full-Stack siendo versátil y capaz de abordar diferentes áreas del desarrollo de software para crear aplicaciones y sistemas bien completos.<br><br>
         <b>Aprendo muy rápido y más si disfruto hacerlo, siempre poniendo lo máximo de mi, perfeccionando mis habilidades adquiridas en la Ingeniería.</b>
@@ -81,17 +82,18 @@
           <div class="skill-titulo">
             <h2>Habilidades</h2>
           </div>          
-              <div class="logos col-sm col-md-9 col-lg-12">
+              <div class="logos col-sm col-md-9 col-lg-12 mb-5">
                 <img src="./imagenes/icono-html.png" alt="">
                 <img src="./imagenes/icono-css.png" alt="">
                 <img src="./imagenes/icono-js.png" alt="">
               </div>      
-        </div>     
+        </div>
+        <hr>     
     </section>
 
     <!-- Proyectos -->
     <section class="proyectos" id="proyectos">
-      <h2 class="proyectos-titulo">
+      <h2 class="proyectos-titulo pe-auto">
         Proyectos
       </h2>
       <div class="proyectos-container">
