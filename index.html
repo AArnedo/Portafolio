@@ -34,7 +34,6 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="menu">
-            <a class="navbar-brand" href="#"><img class="logo-portafolio" src="imagenes/icono.png" width="50" alt="logo de la pagina web"></a>
             <ul class="navbar-nav m-auto">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#sobre-mi">Sobre mi</a>
@@ -49,31 +48,33 @@
           </div>
         </div>
     </nav>
-  
-    
+
     <!-- Seccion Hero -->
-    <section class="hero align-items-center">
-      <div class="hero-principal align-items-center">
-        <div class="card d-flex align-items-center justify-content-center" style="width: 35rem;">
-          <img class="hero-imagen-perfil" src="./imagenes/miFoto.jpeg" alt="foto Agustin">
-          <div class="card-body">
-          <h1>¡HOLA, Soy Agustin Arnedo!</h1>
-          <h2>Desarrollador Web | Training-Junior</h2>
-          </div>
-        </div> 
-      </div>
+    <section class="hero-container">
+      <h1>¡BIENVENIDO!<br>Soy Arnedo Agustin</h1>
     </section>
 
     <!-- Sobre Mi -->
-    <section class="sobre-mi seccion-oscura" id="sobre-mi">
-      <div class="container-fluid d-flex flex-column align-items-center" id="about-me">
-        <h2 class="seccion-titulo">Conoce a Agustin:</h2>
-        <p class="seccion-texto w-75 mb-5"> Soy <b>Agustín Arnedo</b>, tengo 27 años, soy de La Rioja, Argentina y actualmente soy alumno avanzado de Ingeniería Civil en UTN Facultad Regional La Rioja.<br>
-        Hace mas de 1 año comencé a interesarme en el mundo IT y cada día me estoy perfeccionando a través de Cursos Online.<br>
-        Desde muy chico que estoy familiarizado con las computadoras y la Programación se convirtió en uno de mis objetivos de vida, actualmente me interesa mucho la parte Front-End basada en el Desarrollo Web pero mi deseo es convertirme en Full-Stack siendo versátil y capaz de abordar diferentes áreas del desarrollo de software para crear aplicaciones y sistemas bien completos.<br><br>
-        <b>Aprendo muy rápido y más si disfruto hacerlo, siempre poniendo lo máximo de mi, perfeccionando mis habilidades adquiridas en la Ingeniería.</b>
-          </p>
+    <section id="sobre-mi">
+    <div class="sm-contenedor container">
+      <div class="card-contenedor">
+        <div class="card">
+          <div class="card-body">
+            <h1>Agustin Arnedo</h1>
+            <h2>Desarrollador Web | Training-Junior</h2>
+          </div>
+        </div> 
       </div>
+      <div class="txt-container">
+        <div class="sm-parrafo container">
+          <p>Tengo 28 años, soy de La Rioja, Argentina y actualmente soy alumno avanzado de Ingeniería Civil en UTN Facultad Regional La Rioja.
+         Hace mas de 1 año comencé a interesarme en el mundo IT y cada día me estoy perfeccionando a través de Cursos Online. <br>
+          Desde muy niño que estoy familiarizado con las computadoras y la programación se convirtió en uno de mis objetivos de vida, actualmente estoy enfocado en el Desarrollo Web mas del lado Front-End, Pero mi deseo es convertirme en Full-Stack siendo versátil y capaz de abordar difertentes areas del desarrollo de software para crear aplicaciones y sistemas bien completos!<br><br>
+          <b style="font-size: 24px; font-weight: bold; font-style: italic; font-weight: 600;">Aprendo muy rapido, me gusta compartir en grupo, generar ideas, comprometerme con proyectos y brindar todo mi conocimiento para llevar a cabo cualquier cosa que nos propongamos como equipo.</b>
+          </p>
+        </div>
+      </div>
+    </div>
     </section>
 
     <!-- Skilles -->
@@ -87,17 +88,16 @@
                 <img src="./imagenes/icono-css.png" alt="">
                 <img src="./imagenes/icono-js.png" alt="">
               </div>      
-        </div>
-        <hr>     
+        </div>    
     </section>
 
     <!-- Proyectos -->
     <section class="proyectos" id="proyectos">
       <h2 class="proyectos-titulo pe-auto">
-        Proyectos
+        Algunos de mis proyectos!
       </h2>
       <div class="proyectos-container">
-        <div class="card-proyecto">
+        <div class="card-proyecto-1">
           <div class="card-content">
             <a href="https://gustoporviajar.netlify.app/" target="_blank">
             <h3>PROYECTO LANDING PAGE | gustoPorViajar</h3>
@@ -105,11 +105,19 @@
             </a>           
           </div>
         </div> 
+        <div class="card-proyecto-2">
+          <div class="card-content">
+            <a href="https://aarnedo.github.io/burgers-proyect1-digitalers/" target="_blank">
+            <h3>PROYECTO BURGUERS | Buck's</h3>
+            <p> CursoDigitalers | Arnedo Agustin</p>
+            </a>           
+          </div>
+        </div> 
       </div>
     </section>
 
     <!-- Contactos -->
-    <section class="contactos" id="contactos">
+    <footer class="contactos" id="contactos">
       <div class="contactos-container">
         <h2 class="contactos-titulo">
           Para Contactarme:
@@ -128,7 +136,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </footer>
 
 
 
