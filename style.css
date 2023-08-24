@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,400;0,6..12,600;1,6..12,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-/* font-family: 'Lilita One', cursive; */
-/*font-family: 'Rubik Dirt', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+/* font-family: 'Acme', sans-serif; */
 /*font-family: 'Source Sans Pro', sans-serif;*/
 
 *{
@@ -16,31 +15,36 @@
     width: 100%;
     z-index: 1;
     position: fixed;
-    padding: 1.2rem 0;
-    background-color: #d1d1d1;
-
+    padding: 1em 0px;
+    transition: .6s;
+    height: 120px;
 }
+.navbar.sticky{
+    padding: 5px 100px;
+    background-color: #d1d1d1;
+}
+
 .nav-link{
-    color: #1a1a1a;
+    color: #fff;
     margin-right: 2.5rem;
     transition: transform 0.3s ease;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.6rem;
+    font-family: 'Acme', sans-serif;
+    font-size: 2rem;
 }
 .nav-link:hover{
-    color: #000;
+    color: #d6ff44;
     transform: scale(1.2);
 }
 nav a::after {
     content: '';
     position: absolute;
     width: 100%;
-    height: 1px;
-    background-color: #000000;
+    height: 2px;
+    background-color: #b5ff07;
     bottom: 10px;
     left: 0;
     transform: scaleX(0);
-    transform-origin: left;
+    transform-origin: center;
     transition: transform 0.3s ease;
 }
 nav a:hover::after {
@@ -57,22 +61,45 @@ nav a:hover::after {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
+    padding-bottom: 10rem;
+}
+.txt-hero{
+    background-color: #00000094;
+    height: 300px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    border-radius: 50px;
 }
 .hero-container h1{
-    width: 450px;
-    font-family: 'Lilita One', cursive;
-    margin-bottom: 200px;
-    margin-right: 50px;
-    font-size: 48px;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 62px;
+    color: #fff;
+    line-height: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;  
 }
 
 /*Seccion sobre mi */
 
-#sobre-mi{
+.sm{
     background-color: #d1d1d1;
     padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sm h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3em;
+    
 }
 .sm-contenedor{
     display: flex;
@@ -114,40 +141,17 @@ nav a:hover::after {
 .sm-parrafo p{
     width: 100%;
     color: #1a1a1a;
-    font-size: 22px;
+    font-size: 20px;
+    border: 1px solid;
+    padding: 1.5rem;
+    text-align: center;
 }
 
 /* Skilles */
 
 .skill-titulo h2{
     font-size: 3rem;
-    font-family: 'Source Sans Pro', sans-serif;
-    padding: 3rem 0; 
-}
-.logos{
-    width: 100vw;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-.logos img{
-    width: 90px;
-    height: 100px;
-}
-.logos img:hover{
-    animation:shake-horizontal 0.8s linear both
-} 
-@keyframes shake-horizontal{
-    0%,100%
-        {transform:translateX(0)}
-    10%,30%,50%,70%
-        {transform:translateX(-10px)}
-    20%,40%,60%
-        {transform:translateX(10px)}
-    80%
-        {transform:translateX(8px)}
-    90%
-        {transform:translateX(-8px)}
+    font-family: 'Source Sans Pro', sans-serif; 
 }
 
 /*Proyectos*/
@@ -214,7 +218,7 @@ nav a:hover::after {
 /*Contactos*/
 
 .contactos{
-    width: 100vw;
+    width: 100%;
     height: 200px;
     background-color: #d1d1d1;
 }
